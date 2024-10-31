@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Daftar Kue Kesukaan</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .cake-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .cake-list li {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #ffe0b2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .cake-list li:hover {
+            background-color: #ffd54f;
+            transform: translateY(-2px);
+        }
+        .cake-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            margin-right: 15px;
+            transition: transform 0.3s;
+        }
+        .cake-image:hover {
+            transform: scale(1.1);
+        }
+        .cake-name {
+            flex: 1;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daftar Kue Kesukaan</h1>
+        <ul class="cake-list">
+            <li>
+                <img src="bronis.jpg" alt="Brownies" class="cake-image"> 
+                <span class="cake-name">Brownies Coklat</span>
+            </li>
+            <li>
+                <img src="chiscake.jpg" alt="Cheesecake" class="cake-image"> 
+                <span class="cake-name">Cheesecake</span>
+            </li>
+            <li>
+                <img src="lapis.jpg" alt="Kue Lapis" class="cake-image"> 
+                <span class="cake-name">Kue Lapis</span>
+            </li>
+            <li>
+                <img src="tiramisu.jpg" alt="Tiramisu" class="cake-image"> 
+                <span class="cake-name">Tiramisu</span>
+            </li>
+            <li>
+                <img src="cubir.jpg" alt="Kue Cubir" class="cake-image"> 
+                <span class="cake-name">Kue Cubir</span>
+            </li>
+            <li>
+                <img src="donat.jpg" alt="Donat" class="cake-image"> 
+                <span class="cake-name">Donat</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
